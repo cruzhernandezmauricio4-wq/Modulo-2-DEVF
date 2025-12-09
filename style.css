@@ -1,0 +1,45 @@
+/* TARJETA */
+.producto-tarjeta{
+    width: 280px;
+    background-color: blanchedalmond;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* IMAGEN */
+.producto-img{
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+   
+}
+
+/* TEXTO */
+.producto-titulo{
+    font-size: 22px;
+    font-weight: 700;
+  
+}
+
+.producto-desc{
+    font-size: 14px;
+    color: #6d4c41;
+   
+}
+
+
+/* BOTÓN */
+.producto-btn{
+    background: #f95c93;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s ease;
+  
+}
+
+.producto-btn:hover{
+    background: #e00064;
+}
