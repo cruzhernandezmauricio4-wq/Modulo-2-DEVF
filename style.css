@@ -10,7 +10,8 @@
 
 /* Define color de fondo y tipografía*/
 body{
-    font-family: "Lexend", sans-serif;
+    /*La font se debe de agregar en el header del index y en css como sigue*/
+    font-family: "Science Gothic", sans-serif;
     background-color: #f8e0f1;
     color: #333;  
 }
@@ -38,6 +39,7 @@ header, main, footer{
 .logo{
     font-size: 24px;
     font-weight: bold;
+    text-align: center;
 }
 
 /* Menú de navegación */
@@ -55,6 +57,10 @@ header, main, footer{
 
 .nav-lista a:hover{
     color: #ff0084; /* color cuando pasas el cursor */
+}
+#Tit{
+    text-align: center;
+
 }
 
 /* CONTENEDOR DE PRODUCTOS*/
