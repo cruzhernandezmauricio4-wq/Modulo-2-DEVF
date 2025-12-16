@@ -10,36 +10,43 @@
 
 /* Define color de fondo y tipografía*/
 body{
-    /*La font se debe de agregar en el header del index y en css como sigue*/
-    font-family: "Science Gothic", sans-serif;
-    background-color: #f8e0f1;
+    font-family: "Lexend", sans-serif;
+    background-color: #f7f5fa;
     color: #333;  
 }
-p{
-    color: #2a99cc;
-}
+
 /* Limitar ancho y centrar
    - header, main y footer no serán de ancho completo
    - max-width evita que la página se vea muy ancha
    - margin auto los coloca al centro del body
 */
-header, main, footer{
+header, main{
     width: 100%;
     max-width: 1200px;   /* puedes cambiarlo a 900, 1000, etc */
     margin: 0 auto;
 }
 
+.top-banner{
+    background-color: #b6c8ff;
+    text-align: center;
+    padding: 6px 10px;
+    font-size: 14px;
+    color:#6d4c41;
+}
 /* NAV */
 .nav-principal{
     background-color: #ffb6e6;
     padding: 15px 25px;
-
+    max-width: 1200px;
+    margin: 0 auto;
+    position: sticky;
+    top:0;
+    z-index: 1000;
 }
 
 .logo{
     font-size: 24px;
     font-weight: bold;
-    text-align: center;
 }
 
 /* Menú de navegación */
@@ -58,10 +65,6 @@ header, main, footer{
 .nav-lista a:hover{
     color: #ff0084; /* color cuando pasas el cursor */
 }
-#Tit{
-    text-align: center;
-
-}
 
 /* CONTENEDOR DE PRODUCTOS*/
 .catalogo-contenedor{
@@ -70,12 +73,15 @@ header, main, footer{
 
 /* TARJETA DEL PRODUCTO */
 .producto-tarjeta{
+    text-align: center;
     background: #fff;
     border-radius: 15px;
     overflow: hidden;
     padding-bottom: 20px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     transition: transform .2s ease, box-shadow .2s ease;
+    /*Para que la badge absoluta se posicione dentro*/
+    position: relative;
 }
 
 /* Efecto al pasar el mouse */
@@ -130,6 +136,16 @@ header, main, footer{
 
 .producto-btn:hover{
     background: #e00064;
+}
+
+.producto-badge{
+    position: absolute;
+    background-color: #ff0084;
+    top: 10px;
+    left: 10px;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
 }
 
 /* SECCIONES GENERALES */
