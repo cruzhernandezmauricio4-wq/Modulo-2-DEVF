@@ -10,7 +10,7 @@
 
 /* Define color de fondo y tipografía*/
 body{
-    font-family: "Lexend", sans-serif;
+    font-family: "Science Gothic", sans-serif;
     background-color: #f7f5fa;
     color: #333;  
 }
@@ -25,13 +25,13 @@ header, main{
     max-width: 1200px;   /* puedes cambiarlo a 900, 1000, etc */
     margin: 0 auto;
 }
-
 .top-banner{
-    background-color: #b6c8ff;
+    background-color: #ffe2f4;
     text-align: center;
     padding: 6px 10px;
     font-size: 14px;
-    color:#6d4c41;
+    color: #6d4c41;
+    text-transform: uppercase;
 }
 /* NAV */
 .nav-principal{
@@ -40,8 +40,13 @@ header, main{
     max-width: 1200px;
     margin: 0 auto;
     position: sticky;
-    top:0;
+    top: 0;
     z-index: 1000;
+    /*Agregar Felx Box*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo{
@@ -52,6 +57,10 @@ header, main{
 /* Menú de navegación */
 .nav-lista{
     list-style: none;
+    /*Agregar Felx Box*/
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 /* Estilo de los enlaces del menú */
@@ -69,19 +78,24 @@ header, main{
 /* CONTENEDOR DE PRODUCTOS*/
 .catalogo-contenedor{
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 /* TARJETA DEL PRODUCTO */
 .producto-tarjeta{
-    text-align: center;
     background: #fff;
     border-radius: 15px;
     overflow: hidden;
     padding-bottom: 20px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     transition: transform .2s ease, box-shadow .2s ease;
-    /*Para que la badge absoluta se posicione dentro*/
+    /*para que la batch absoluta se posicione dentro*/
     position: relative;
+
+    flex: 1 1 240px; /*ocupa minoimo los 240 pixeles y puede crecer y encogerse */
 }
 
 /* Efecto al pasar el mouse */
@@ -137,17 +151,15 @@ header, main{
 .producto-btn:hover{
     background: #e00064;
 }
-
 .producto-badge{
     position: absolute;
     background-color: #ff0084;
     top: 10px;
     left: 10px;
-    color: white;
+    color: #fafafa;
     padding: 5px 12px;
     border-radius: 20px;
 }
-
 /* SECCIONES GENERALES */
 section{
     padding: 25px;
@@ -170,13 +182,24 @@ li{
 /* CONTACTO EN DOS COLUMNAS*/
 .contacto-section{
     margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
-
+.contacto-contenido,
+.contacto-aside{
+    flex: 1 1 240px;
+}
 /* FORMULARIO */
 .form-contacto{
     background: white;
     padding: 20px;
     border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /* Inputs y textarea del formulario */
@@ -196,24 +219,23 @@ footer{
     background-color: #ffe2f4;
     color: #4b004b;
 }
-
-/*BOTON FLOTANTE Position fixed*/
 .boton-carrito{
     position: fixed;
     bottom: 25px;
-    right:25px;
-    background-color: #f078a6;
+    right: 25px;
+    background-color: #d76196;
+    font-size: 16px;
     font-weight: bold;
     text-decoration: none;
     border-radius: 50px;
-    font-size: 16px;
     padding: 12px 20px;
-    color:white;
+    color: white;
     z-index: 1500;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    transition: .2s ease-in-out;
+    transition: .2s ease;
+
 }
 
 .boton-carrito:hover{
-    background-color: #e0489e;
+    background-color: #e00064;
 }
