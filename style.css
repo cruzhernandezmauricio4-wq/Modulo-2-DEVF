@@ -1,45 +1,174 @@
-/* TARJETA */
-.producto-tarjeta{
-    width: 280px;
-    background-color: blanchedalmond;
-    border-radius: 12px;
-    text-align: center;
+/* RESET BÁSICO 
+   - Elimina márgenes y padding por defecto
+   - Aplica box-sizing: border-box para que el ancho incluya padding/border
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* IMAGEN */
+/* Define color de fondo y tipografía*/
+body{
+    font-family: "Lexend", sans-serif;
+    background-color: #f7f5fa;
+    color: #333;  
+}
+
+/* Limitar ancho y centrar
+   - header, main y footer no serán de ancho completo
+   - max-width evita que la página se vea muy ancha
+   - margin auto los coloca al centro del body
+*/
+header, main, footer{
+    width: 100%;
+    max-width: 1200px;   /* puedes cambiarlo a 900, 1000, etc */
+    margin: 0 auto;
+}
+
+/* NAV */
+.nav-principal{
+    background-color: #ffb6e6;
+    padding: 15px 25px;
+
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Menú de navegación */
+.nav-lista{
+    list-style: none;
+}
+
+/* Estilo de los enlaces del menú */
+.nav-lista a{
+    text-decoration: none;
+    color: #4b004b;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.nav-lista a:hover{
+    color: #ff0084; /* color cuando pasas el cursor */
+}
+
+/* CONTENEDOR DE PRODUCTOS*/
+.catalogo-contenedor{
+    padding: 20px;
+}
+
+/* TARJETA DEL PRODUCTO */
+.producto-tarjeta{
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+/* Efecto al pasar el mouse */
+.producto-tarjeta:hover{
+    transform: translateY(-6px);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
+}
+
+/* IMAGEN DEL PRODUCTO */
 .producto-img{
     width: 100%;
     height: 220px;
-    object-fit: contain;
-   
+    object-fit: contain; /* ajusta imagen sin deformarse */
+    background-color: #fafafa;
+    padding: 10px;
 }
 
-/* TEXTO */
+/* TÍTULO DEL PRODUCTO */
 .producto-titulo{
     font-size: 22px;
     font-weight: 700;
-  
+    margin-top: 10px;
 }
 
+/* DESCRIPCIÓN DEL PRODUCTO */
 .producto-desc{
     font-size: 14px;
     color: #6d4c41;
-   
+    margin: 10px 15px;
 }
 
+/* PRECIO */
+.producto-precio{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4b91;
+    margin-bottom: 10px;
+}
 
-/* BOTÓN */
+/* BOTÓN DEL PRODUCTO */
 .producto-btn{
-    background: #f95c93;
+    background: #ff8bb3;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 6px;
     cursor: pointer;
     transition: .3s ease;
-  
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .producto-btn:hover{
     background: #e00064;
+}
+
+/* SECCIONES GENERALES */
+section{
+    padding: 25px;
+}
+
+h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+ul{
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+li{
+    margin-bottom: 6px;
+}
+
+/* CONTACTO EN DOS COLUMNAS*/
+.contacto-section{
+    margin-top: 40px;
+}
+
+/* FORMULARIO */
+.form-contacto{
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Inputs y textarea del formulario */
+.form-contacto input,
+.form-contacto textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+
+/* FOOTER */
+footer{
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #ffe2f4;
+    color: #4b004b;
 }

@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!--Conectado con Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <title>Tienda Kawai</title>
 </head>
 <body>
@@ -53,47 +57,82 @@
 
                 <!-- Producto 3 -->
                 <div class="producto-tarjeta">
-                    <img src="https://png.pngtree.com/png-vector/20230928/ourmid/pngtree-cute-bear-teddy-toy-png-image_10149481.png" alt="Libreta kawaii" class="producto-img">
-                    <h3 class="producto-titulo">Oso de peluche</h3>
+                    <img src="img/libretaPerro.jpg" alt="Libreta kawaii" class="producto-img">
+                    <h3 class="producto-titulo">Libreta</h3>
                     <p class="producto-desc">
-                        Oso de peluche relelno de 15 x10 cm.
+                        Libreta tamaño A5 con hojas rayadas y portada pastel. Ideal para la escuela o la oficina.
                     </p>
                     <p class="producto-precio">$99 MXN</p>
                     <button class="producto-btn">Agregar al carrito</button>
                 </div>
+                <!--Para agregar una imagen desde el ordenador solo hacer drag an drop-->
 
-                
+                <!-- Producto 4 -->
+                <div class="producto-tarjeta">
+                    <img src="img/PlumasGel.jpg" alt="Pluma de gel kawaii" class="producto-img">
+                    <h3 class="producto-titulo">Plumas de gel</h3>
+                    <p class="producto-desc">
+                        Set de 6 plumas de gel en tonos pastel, punta fina, perfectas para subrayar y hacer apuntes lindos.
+                    </p>
+                    <p class="producto-precio">$89 MXN</p>
+                    <button class="producto-btn">Agregar al carrito</button>
+                </div>
             </div>
         </section>
 
-        
+        <!-- Entregas -->
+        <section id="entregas">
+            <h2>Entregas y envíos</h2>
+            <p>Queremos que tus productos kawaii lleguen rápido y seguros. Así funcionan nuestras entregas:</p>
+            <ul>
+                <li><strong>Envíos nacionales:</strong> A todo México por paquetería (3 a 7 días hábiles).</li>
+                <li><strong>Envíos express:</strong> Disponible en zonas seleccionadas (1 a 2 días hábiles).</li>
+                <li><strong>Entrega local:</strong> Punto de entrega acordado en CDMX (sin costo extra).</li>
+                <li><strong>Seguimiento:</strong> Te enviamos tu número de guía por correo o WhatsApp.</li>
+            </ul>
+            <p><strong>Forma de pago:</strong> Transferencia, tarjeta de crédito/débito y algunas billeteras digitales.</p>
+        </section>
 
+        <!-- Acerca de -->
+        <section id="acerca">
+            <h2>Acerca de Tienda Kawai</h2>
+            <p>
+                Tienda Kawai nace del amor por la papelería bonita, los detalles especiales y el estilo 
+                tierno que hace más ligeros los días de escuela, trabajo y estudio.
+            </p>
+            <p>
+                Seleccionamos productos funcionales pero estéticos, pensando en estudiantes, creadores de 
+                contenido y personas que aman organizar su espacio con un toque pastel.
+            </p>
+        </section>
 
-        <!-- Contacto -->
-        <section id="contacto">
+        <section id="contacto" class="contacto-section">
+        <div class="contacto-contenido">
             <h2>Contacto</h2>
             <p>¿Tienes dudas sobre un producto, envíos o pedidos personalizados? Escríbenos.</p>
 
-            <div class="contacto-info">
-                <p><strong>Correo:</strong> hola@tiendakawai.mx</p>
-                <p><strong>WhatsApp:</strong> +52 55 0000 0000</p>
-                <p><strong>Horario de atención:</strong> Lunes a viernes de 10:00 a 19:00 hrs.</p>
-            </div>
+            <p><strong>Correo:</strong> hola@tiendakawai.mx</p>
+            <p><strong>WhatsApp:</strong> +52 55 0000 0000</p>
+            <p><strong>Horario:</strong> Lunes a viernes 10:00 a 19:00 hrs.</p>
+        </div>
 
+        <aside class="contacto-aside">
             <form class="form-contacto">
                 <h3>Envíanos un mensaje</h3>
+
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+                <input type="text" id="nombre" placeholder="Escribe tu nombre">
 
                 <label for="correo">Correo electrónico</label>
-                <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com">
+                <input type="email" id="correo" placeholder="correo@ejemplo.com">
 
                 <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
+                <textarea id="mensaje" rows="4" placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
 
                 <button type="submit">Enviar mensaje</button>
             </form>
-        </section>
+        </aside>
+</section>
     </main>
 
     <footer>
