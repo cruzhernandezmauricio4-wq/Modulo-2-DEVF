@@ -11,10 +11,12 @@
 /* Define color de fondo y tipografía*/
 body{
     font-family: "Lexend", sans-serif;
-    background-color: #f7f5fa;
+    background-color: #f8e0f1;
     color: #333;  
 }
-
+p{
+    color: #2a99cc;
+}
 /* Limitar ancho y centrar
    - header, main y footer no serán de ancho completo
    - max-width evita que la página se vea muy ancha
